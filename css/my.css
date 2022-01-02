@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*
+Template Name: FSHOP	
+Author: NHÓM
+Author URI: 
+*/
+/* Table of Content
+==================================================
+#BASIC TYPOGRAPHY
+#HEADER	
+#MENU 
+#STORE
+#REVIEW
+#VIDEO REVIEW
+#AUTHOR
+#READERS TESTIMONIALS
+#FAQ 
+#CONTACT US
+#FOOTER
+#RESPONSIVE STYLE
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.13;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.up {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc400), color-stop(50%, #ff981d), to(#ff842f));
+  background: linear-gradient(90deg, #ffc400, #ff981d 50%, #ff842f);
+}
+
+nav {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc400), color-stop(50%, #ff981d), to(#ff842f));
+  background: linear-gradient(90deg, #ffc400, #ff981d 50%, #ff842f);
+}
+
+nav img.icon {
+  width: 80px;
+}
+
+nav .navbar-brand {
+  color: black;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+nav .navbar-brand img {
+  margin-right: 10px;
+}
+
+nav .navbar-nav .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav .navbar-nav .nav-item:first {
+  margin-left: 0px;
+}
+
+nav .navbar-nav .nav-item:last-child {
+  margin-right: 0px;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  font-size: 1.2rem;
+  color: white;
+}
+
+nav .navbar-nav .nav-item .nav-link.active {
+  color: black;
+}
+
+.wrapper-gallery {
+  padding-top: 150px;
+}
+
+.image-gallery {
+  border-radius: 50px;
+  background: url("https://1.bp.blogspot.com/-fSCeJH5zHhw/UmrcX8ZCMKI/AAAAAAAAAF4/anuhadm6IiU/w1200-h630-p-nu/Grey+Chevron.png");
+  background-size: cover;
+}
+
+.image-gallery img {
+  width: 100%;
+}
+
+.quan-ao {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#why-chose-us {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffc400), color-stop(50%, #ff981d), to(#ff842f));
+  background-image: linear-gradient(90deg, #ffc400, #ff981d 50%, #ff842f);
+}
+
+#why-chose-us h2 {
+  color: white;
+}
+
+.icon-box * {
+  color: white;
+}
+
+.icon-box .icon-box-text {
+  font-size: 1.5rem;
+}
+
+.icon-box .icon-box-text .icon-box-title {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.icon-box i {
+  width: auto;
+  height: auto;
+  font-size: 100px;
+}
+
+.icon-box i svg {
+  margin-bottom: 10px;
+}
+
+.khach-hang .noi-dung {
+  text-align: center;
+}
+
+.khach-hang .noi-dung .mu-rt-img {
+  border-radius: 50%;
+  padding-top: 0.2em;
+}
+
+.cac-khach-hang {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc400), color-stop(50%, #ff981d), to(#ff842f));
+  background: linear-gradient(90deg, #ffc400, #ff981d 50%, #ff842f);
+}
+
+.cac-khach-hang .carousel-indicators {
+  position: relative;
+}
+/*# sourceMappingURL=my.css.map */

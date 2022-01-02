@@ -1,0 +1,175 @@
+/*
+Template Name: FSHOP	
+Author: NHÓM
+Author URI: 
+*/
+
+/* Table of Content
+==================================================
+#BASIC TYPOGRAPHY
+#HEADER	
+#MENU 
+#STORE
+#REVIEW
+#VIDEO REVIEW
+#AUTHOR
+#READERS TESTIMONIALS
+#FAQ 
+#CONTACT US
+#FOOTER
+#RESPONSIVE STYLE
+*/
+
+$mau-nen-chinh: linear-gradient(90deg, #ffc400, #ff981d 50%, #ff842f);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.13;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.up {
+  background: $mau-nen-chinh;
+}
+
+nav {
+  background: $mau-nen-chinh;
+
+  img.icon {
+    width: 80px;
+  }
+
+  .navbar-brand {
+    img {
+      margin-right: 10px;
+    }
+    color: black;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin-left: 10px;
+      margin-right: 10px;
+      &:first {
+        margin-left: 0px;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      .nav-link {
+        font-size: 1.2rem;
+        color: white;
+        &.active {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.wrapper-gallery {
+  padding-top: 150px;
+}
+
+.image-gallery {
+  border-radius: 50px;
+  background: url("https://1.bp.blogspot.com/-fSCeJH5zHhw/UmrcX8ZCMKI/AAAAAAAAAF4/anuhadm6IiU/w1200-h630-p-nu/Grey+Chevron.png");
+  background-size: cover;
+  img {
+    width: 100%;
+  }
+}
+
+.quan-ao {
+  height: fit-content;
+}
+
+#why-chose-us {
+  background-image: $mau-nen-chinh;
+  h2 {
+    color: white;
+  }
+}
+
+.icon-box {
+  * {
+    color: white;
+  }
+  .icon-box-text {
+    font-size: 1.5rem;
+    .icon-box-title {
+      font-weight: 800;
+      font-size: 3rem;
+    }
+  }
+  i {
+    width: auto;
+    height: auto;
+    font-size: 100px;
+    svg {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.khach-hang {
+  .noi-dung {
+    text-align: center;
+    .mu-rt-img {
+      border-radius: 50%;
+      padding-top: 0.2em;
+    }
+  }
+}
+
+.cac-khach-hang {
+  background: $mau-nen-chinh;
+  .carousel-indicators {
+    position: relative;
+  }
+}
+
+
+/* GOOGLE MAP */
+
+#mu-google-map {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+#mu-google-map iframe{
+    pointer-events: none;
+}
