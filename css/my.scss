@@ -31,6 +31,8 @@ h6 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -124,10 +126,15 @@ nav {
 }
 
 .icon-box {
+  img {
+    width: 100%;
+  }
   * {
+    text-align: center;
     color: white;
   }
   .icon-box-text {
+    text-align: center;
     font-size: 1.5rem;
     .icon-box-title {
       font-weight: 800;
@@ -143,6 +150,23 @@ nav {
     }
   }
 }
+
+#feature {
+  .icon-box-text {
+    color: #3f345f;
+    * {
+      color: #3f345f;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+}
+
 
 .khach-hang {
   .noi-dung {
@@ -161,15 +185,14 @@ nav {
   }
 }
 
-
 /* GOOGLE MAP */
 
 #mu-google-map {
-	display: inline;
-	float: left;
-	width: 100%;
+  display: inline;
+  float: left;
+  width: 100%;
 }
 
-#mu-google-map iframe{
-    pointer-events: none;
+#mu-google-map iframe {
+  pointer-events: none;
 }

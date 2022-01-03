@@ -35,8 +35,9 @@
     <div class="up container-fluid p-0">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-lg">
-          <a class="navbar-brand" href="#"
-            ><img src="images/FIcon.png" alt="ficon" class="icon" />FShop</a
+          <a class="navbar-brand row align-items-center" href="#"
+            ><img src="images/FIcon.png" alt="ficon" class="icon col-6" />
+            <div class="col-6">FShop</div></a
           >
           <button
             class="navbar-toggler"
@@ -55,28 +56,35 @@
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-center"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Store</a>
+                <a class="nav-link text-center" href="#">Store</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#why-chose-us">About Us</a>
+                <a class="nav-link text-center" href="#why-chose-us"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Review</a>
+                <a class="nav-link text-center" href="#">Review</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#mu-faq">FAQ</a>
+                <a class="nav-link text-center" href="#mu-faq">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link text-center" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
+      <!-- BIA -->
       <div class="container bg-transparent wrapper-gallery">
         <div class="row image-gallery align-items-center">
           <div class="col-lg-6 col-sm-12 row align-items-center">
@@ -90,7 +98,64 @@
         </div>
       </div>
       <img src="images/wave.svg" alt="" class="container-fluid p-0" />
+      <!-- END BIA -->
     </div>
+
+    <!-- feature -->
+    <section class="container" id="feature">
+      <div class="text-center">
+        <h2 class="title align-self-center">Hỗ Trợ Tốt Nhất</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="icon-box">
+            <div class="icon-box-img">
+              <img src="images/ic-sales1.png" alt="Hỗ trợ 24/7" />
+            </div>
+            <div class="icon-box-text">
+              <h3>Hỗ trợ 24/7</h3>
+              <p>
+                Chúng tôi hỗ trợ tốt nhất cho mọi hoạt động của bạn bất kể lúc
+                nào bạn cần đến .
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="icon-box">
+            <div class="icon-box-img">
+              <img src="images/ic-buying.png" alt="buying" />
+            </div>
+            <div class="icon-box-text">
+              <h3>Thanh toán dễ dàng</h3>
+              <p>
+                Cách thức thanh toán dễ dàng và tiện dụng, ngay lập tức hoàn
+                tiền nếu hết hàng! .
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="icon-box">
+            <div class="icon-box-img">
+              <img src="images/ic-online-shopping.png" alt="shopping" />
+            </div>
+            <div class="icon-box-text">
+              <h3>Mua được nhiều hàng</h3>
+              <p>
+                Hỗ trợ bạn mua được nhiều hàng thông qua kiến thức mua sắm
+                online .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end feature -->
 
     <!-- CHOOSE US -->
     <section class="section p-4" id="why-chose-us">
@@ -203,6 +268,25 @@
     </section>
     <!-- END CHOOSE US -->
 
+    <!-- Start Video Review -->
+    <section id="video-review">
+      <div class="container mt-5 mb-5">
+        <h2 class="title">Video Review</h2>
+
+        <!-- Start Video Review Content -->
+
+        <iframe
+          class="w-75 d-block m-auto"
+          style="min-height: 500px;"
+          src="https://www.youtube.com/embed/T4ySAlBt2Ug"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <!-- End Video Review Content -->
+      </div>
+    </section>
+    <!-- End Video Review -->
+
     <div class="container-fluid p-0">
       <!-- Carousel -->
       <div
@@ -289,7 +373,7 @@
 
     <!-- FAQ -->
     <section id="mu-faq">
-      <div class="container">
+      <div class="container mt-5 mb-5">
         <div class="row">
           <div class="col-md-12">
             <div class="mu-faq-area">
@@ -300,144 +384,131 @@
               <div class="mu-faq-content">
                 <div class="row">
                   <!-- FAQ Single Content -->
-                  <div class="col col-2 col-img">
-                    <img src="images/faq-img.png" alt="" />
+                  <div class="col col-xl-6 col-12 col-img text-center">
+                    <img src="images/faq-img.png" alt="" class="w-100" />
                   </div>
-                  <div class="col col-2">
-                    <div class="ant-collapse" role="tablist">
-                      <div class="ant-collapse-item ant-collapse-item-active">
+                  <!-- singel nd -->
+                  <div
+                    class="
+                      col col-xl-6 col-12
+                      d-inline-block
+                      p-4 p-lg-0
+                      ps-0 ps-xl-5
+                      pe-0
+                    "
+                  >
+                    <div
+                      class="accordion w-100 float-end"
+                      id="accordionExample"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            FShop hoạt động như thế nào ?
+                          </button>
+                        </h2>
                         <div
-                          class="ant-collapse-header"
-                          role="tab"
-                          tabindex="0"
-                          aria-expanded="true"
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
                         >
-                          <i class="anticon anticon-right arrow"
-                            ><svg
-                              viewBox="64 64 896 896"
-                              class=""
-                              data-icon="right"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              aria-hidden="true"
+                          <div class="accordion-body">
+                            <strong
+                              >This is the first item's accordion body.</strong
                             >
-                              <path
-                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
-                              ></path></svg></i
-                          >Fshopee hoạt động như thế nào ?
-                        </div>
-                        <div
-                          class="
-                            ant-collapse-content ant-collapse-content-active
-                          "
-                          role="tabpanel"
-                        >
-                          <div class="ant-collapse-content-box">
-                            <p>
-                              Fshopee lè hệ thống trao đổi chéo Follow/Sub giữa
-                              các người dùng Fshopee. Khi bạn Follow 1 shop bạn
-                              sẽ nhận được 1 Follow.
-                            </p>
+                            It is shown by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
                           </div>
                         </div>
                       </div>
-                      <div class="ant-collapse-item">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            Accordion Item #2
+                          </button>
+                        </h2>
                         <div
-                          class="ant-collapse-header"
-                          role="tab"
-                          tabindex="0"
-                          aria-expanded="false"
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample"
                         >
-                          <i class="anticon anticon-right arrow"
-                            ><svg
-                              viewBox="64 64 896 896"
-                              class=""
-                              data-icon="right"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              aria-hidden="true"
+                          <div class="accordion-body">
+                            <strong
+                              >This is the second item's accordion body.</strong
                             >
-                              <path
-                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
-                              ></path></svg></i
-                          >Tôi không muốn dùng Tài khoản Shopee chính để follow
-                          shop khác có được không ?
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
                         </div>
                       </div>
-                      <div class="ant-collapse-item">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            Accordion Item #3
+                          </button>
+                        </h2>
                         <div
-                          class="ant-collapse-header"
-                          role="tab"
-                          tabindex="0"
-                          aria-expanded="false"
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample"
                         >
-                          <i class="anticon anticon-right arrow"
-                            ><svg
-                              viewBox="64 64 896 896"
-                              class=""
-                              data-icon="right"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              aria-hidden="true"
+                          <div class="accordion-body">
+                            <strong
+                              >This is the third item's accordion body.</strong
                             >
-                              <path
-                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
-                              ></path></svg></i
-                          >Sử dụng Fshopee tăng follow và like có bị shopee phạt
-                          không ?
-                        </div>
-                      </div>
-                      <div class="ant-collapse-item">
-                        <div
-                          class="ant-collapse-header"
-                          role="tab"
-                          tabindex="0"
-                          aria-expanded="false"
-                        >
-                          <i class="anticon anticon-right arrow"
-                            ><svg
-                              viewBox="64 64 896 896"
-                              class=""
-                              data-icon="right"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
-                              ></path></svg></i
-                          >Tôi có thể copy sản phẩm của shop khác không ?
-                        </div>
-                      </div>
-                      <div class="ant-collapse-item">
-                        <div
-                          class="ant-collapse-header"
-                          role="tab"
-                          tabindex="0"
-                          aria-expanded="false"
-                        >
-                          <i class="anticon anticon-right arrow"
-                            ><svg
-                              viewBox="64 64 896 896"
-                              class=""
-                              data-icon="right"
-                              width="1em"
-                              height="1em"
-                              fill="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
-                              ></path></svg></i
-                          >Làm sao để quản lý nhiều tài khoản shopee hiệu quả ?
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <!-- end -->
                 </div>
               </div>
             </div>
@@ -454,13 +525,8 @@
           <div class="col-md-12">
             <div class="mu-contact-area">
               <div class="mu-heading-area">
-                <h2 class="mu-heading-title">Drop Us A Message</h2>
+                <h2 class="mu-heading-title">Gửi Lời Nhắn Cho Chúng Tôi</h2>
                 <span class="mu-header-dot"></span>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever
-                </p>
               </div>
 
               <!-- Start Contact Content -->

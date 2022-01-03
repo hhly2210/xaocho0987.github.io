@@ -28,6 +28,8 @@ h6 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -130,11 +132,17 @@ nav .navbar-nav .nav-item .nav-link.active {
   color: white;
 }
 
+.icon-box img {
+  width: 100%;
+}
+
 .icon-box * {
+  text-align: center;
   color: white;
 }
 
 .icon-box .icon-box-text {
+  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -153,6 +161,23 @@ nav .navbar-nav .nav-item .nav-link.active {
   margin-bottom: 10px;
 }
 
+#feature .icon-box-text {
+  color: #3f345f;
+}
+
+#feature .icon-box-text * {
+  color: #3f345f;
+}
+
+#feature .icon-box-text h3 {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+#feature .icon-box-text p {
+  font-size: 0.8em;
+}
+
 .khach-hang .noi-dung {
   text-align: center;
 }
@@ -169,5 +194,16 @@ nav .navbar-nav .nav-item .nav-link.active {
 
 .cac-khach-hang .carousel-indicators {
   position: relative;
+}
+
+/* GOOGLE MAP */
+#mu-google-map {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#mu-google-map iframe {
+  pointer-events: none;
 }
 /*# sourceMappingURL=my.css.map */
