@@ -4,36 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <link rel="stylesheet" href="css/my.css" />
+    <link rel="stylesheet" href="aos-master/dist/aos.css" />
     <title>FShop</title>
     <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      type="image/icon"
-      href="images/logo_fshopee.png"
-    />
+    <link rel="shortcut icon" type="image/icon" href="images/logo_fshopee.png" />
 
     <!-- FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/472b9ced83.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -44,58 +30,41 @@
             ><img src="images/FIcon.png" alt="ficon" class="icon col-6" />
             <div class="col-6">FShop</div>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-chevron-down"></i>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active text-center"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
+                <a class="nav-link active text-center" aria-current="page" href="#">Trang chủ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="#">Store</a>
+                <a class="nav-link text-center" href="#shopping-cart">Cửa hàng</a>
                 <div class="sub-menu">
                   <ul>
-                    <li><a href="">Áo nam</a></li>
-                    <li><a href="">Áo nữ</a></li>
+                    <li><a href="">Nam</a></li>
+                    <li><a href="">Phụ kiện</a></li>
                   </ul>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="#why-chose-us"
-                  >About Us</a
-                >
+                <a class="nav-link text-center" href="#feature">Tính năng</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="#">Review</a>
+                <a class="nav-link text-center" href="#review">Review</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-center" href="#mu-faq">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-center" href="#">Contact</a>
+                <a class="nav-link text-center" href="#mu-contact">Liên hệ</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- BIA -->
+      <section id="bia">
       <div class="container bg-transparent wrapper-gallery">
         <div class="row image-gallery align-items-center">
           <div class="col-lg-6 col-sm-12 row align-items-center">
@@ -111,65 +80,78 @@
       <img src="images/wave.svg" alt="" class="container-fluid p-0" />
       <!-- END BIA -->
     </div>
+  </section>
 
     <!-- Store -->
-    <section class="shopping-cart">
-      <div class="container"></div>
-    </section>
 
-    <!-- end -->
-
-
-    <section id="shopping-cart" class="mb-5" >
+    <section id="shopping-cart" class="mb-5">
       <div class="container">
         <div class="row justify-content-evenly pb-5">
-          <div class="col-3">
-            <a href=""><img class="img-fluid" src="./images/outfit.jpg" alt=""></a>
+          <div class="col-6 col-lg-3" data-aos="zoom-in-right" data-aos-delay="50" data-aos-duration="1000">
+            <a href=""><img class="img-fluid" src="./images/outfit.jpg" alt="" /></a>
           </div>
-          <div class="col-3">
-            <a href=""><img class="img-fluid" src="./images/daily.jpg" alt=""></a>
+          <div class="col-6 col-lg-3" data-aos="zoom-in-left" data-aos-delay="50" data-aos-duration="1000">
+            <a href=""><img class="img-fluid" src="./images/daily.jpg" alt="" /></a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-6">
-            <a href=""><img class="img-fluid" src="./images/must.jpg" alt=""></a>
+          <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <a href=""><img class="img-fluid" src="./images/must.jpg" alt="" /></a>
           </div>
-          <div class="col-6 d-flex list-thumb-children">
-              <div class="row">
-                <div class="col-6 pb-5">
-                  <a href=""><img class="img-fluid" src="./images/sling.jpg" alt=""></a>
-                </div>
-                <div class="col-6 pb-5">
-                  <a href=""><img class="img-fluid" src="./images/back.jpg" alt=""></a>
-                </div>
-                <div  class="col-6">
-                  <a href=""><img class="img-fluid" src="./images/hat.jpg" alt=""></a>
-                </div>
-                <div class="col-6">
-                  <a href=""><img class="img-fluid" src="./images/betf.jpg" alt=""></a>
-                </div>
+          <div class="col-12 col-lg-6 d-flex list-thumb-children">
+            <div class="row">
+              <div class="col-6 pb-5" data-aos="zoom-out" data-aos-delay="200">
+                <a href=""><img class="img-fluid" src="./images/sling.jpg" alt="" /></a>
               </div>
-              
+              <div class="col-6 pb-5" data-aos="zoom-out" data-aos-delay="225">
+                <a href=""><img class="img-fluid" src="./images/back.jpg" alt="" /></a>
+              </div>
+              <div class="col-6" data-aos="zoom-out" data-aos-delay="250">
+                <a href=""><img class="img-fluid" src="./images/hat.jpg" alt="" /></a>
+              </div>
+              <div class="col-6" data-aos="zoom-out" data-aos-delay="290">
+                <a href=""><img class="img-fluid" src="./images/betf.jpg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Slide show -->
+    <section class="mb-5">
+      <div class="container-fluid container-lg">
+        <div class="slider-thumb">
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images//jacket ninja japan.jpg" alt="" /></a>
+          </div>
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images/jacket overnight.jpg" alt="" /></a>
+          </div>
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images/ao jacket Logo.jpg" alt="" /></a>
+          </div>
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images/balo anubis2.jpg" alt="" /></a>
+          </div>
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images//jacket ninja japan.jpg" alt="" /></a>
+          </div>
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images/jacket overnight.jpg" alt="" /></a>
+          </div>
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images/ao jacket Logo.jpg" alt="" /></a>
+          </div>
+          <div class="px-3">
+            <a href=""><img class="img-fluid" src="./images/balo anubis2.jpg" alt="" /></a>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="mb-5">
-      <div class="container">
-        <div class="slider-thumb">
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images//jacket ninja japan.jpg" alt=""></a></div>
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images/jacket overnight.jpg" alt=""></a></div>
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images/ao jacket Logo.jpg" alt=""></a></div>
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images/balo anubis2.jpg" alt=""></a></div>
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images//jacket ninja japan.jpg" alt=""></a></div>
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images/jacket overnight.jpg" alt=""></a></div>
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images/ao jacket Logo.jpg" alt=""></a></div>
-        <div class="px-3"><a href=""><img class="img-fluid" src="./images/balo anubis2.jpg" alt=""></a></div>
-      </div>
-      </div>
-    </section>
+  </section>
+    <!-- end Slide show -->
+    <!-- end Store -->
 
     <!-- feature -->
     <section class="container mb-5" id="feature">
@@ -185,10 +167,7 @@
             </div>
             <div class="icon-box-text">
               <h3>Hỗ trợ 24/7</h3>
-              <p>
-                Chúng tôi hỗ trợ tốt nhất cho mọi hoạt động của bạn bất kể lúc
-                nào bạn cần đến .
-              </p>
+              <p>Chúng tôi hỗ trợ tốt nhất cho mọi hoạt động của bạn bất kể lúc nào bạn cần đến .</p>
             </div>
           </div>
         </div>
@@ -200,10 +179,7 @@
             </div>
             <div class="icon-box-text">
               <h3>Thanh toán dễ dàng</h3>
-              <p>
-                Cách thức thanh toán dễ dàng và tiện dụng, ngay lập tức hoàn
-                tiền nếu hết hàng! .
-              </p>
+              <p>Cách thức thanh toán dễ dàng và tiện dụng, ngay lập tức hoàn tiền nếu hết hàng! .</p>
             </div>
           </div>
         </div>
@@ -215,10 +191,7 @@
             </div>
             <div class="icon-box-text">
               <h3>Mua được nhiều hàng</h3>
-              <p>
-                Hỗ trợ bạn mua được nhiều hàng thông qua kiến thức mua sắm
-                online .
-              </p>
+              <p>Hỗ trợ bạn mua được nhiều hàng thông qua kiến thức mua sắm online .</p>
             </div>
           </div>
         </div>
@@ -237,18 +210,8 @@
             <div class="col col-6">
               <div class="icon-box">
                 <i class="anticon anticon-cloud-download">
-                  <svg
-                    viewBox="64 64 896 896"
-                    class=""
-                    data-icon="cloud-download"
-                    width="1em"
-                    height="1em"
-                    fill="white"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"
-                    ></path>
+                  <svg viewBox="64 64 896 896" class="" data-icon="cloud-download" width="1em" height="1em" fill="white" aria-hidden="true">
+                    <path d="M624 706.3h-74.1V464c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8v242.3H400c-6.7 0-10.4 7.7-6.3 12.9l112 141.7a8 8 0 0 0 12.6 0l112-141.7c4.1-5.2.4-12.9-6.3-12.9z"></path>
                     <path
                       d="M811.4 366.7C765.6 245.9 648.9 160 512.2 160S258.8 245.8 213 366.6C127.3 389.1 64 467.2 64 560c0 110.5 89.5 200 199.9 200H304c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8h-40.1c-33.7 0-65.4-13.4-89-37.7-23.5-24.2-36-56.8-34.9-90.6.9-26.4 9.9-51.2 26.2-72.1 16.7-21.3 40.1-36.8 66.1-43.7l37.9-9.9 13.9-36.6c8.6-22.8 20.6-44.1 35.7-63.4a245.6 245.6 0 0 1 52.4-49.9c41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.2c19.9 14 37.5 30.8 52.4 49.9 15.1 19.3 27.1 40.7 35.7 63.4l13.8 36.5 37.8 10C846.1 454.5 884 503.8 884 560c0 33.1-12.9 64.3-36.3 87.7a123.07 123.07 0 0 1-87.6 36.3H720c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h40.1C870.5 760 960 670.5 960 560c0-92.7-63.1-170.7-148.6-193.3z"
                     ></path>
@@ -263,15 +226,7 @@
             <div class="col col-6">
               <div class="icon-box">
                 <i class="anticon anticon-heart"
-                  ><svg
-                    viewBox="64 64 896 896"
-                    class=""
-                    data-icon="heart"
-                    width="1em"
-                    height="1em"
-                    fill="white"
-                    aria-hidden="true"
-                  >
+                  ><svg viewBox="64 64 896 896" class="" data-icon="heart" width="1em" height="1em" fill="white" aria-hidden="true">
                     <path
                       d="M923 283.6a260.04 260.04 0 0 0-56.9-82.8 264.4 264.4 0 0 0-84-55.5A265.34 265.34 0 0 0 679.7 125c-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5a258.44 258.44 0 0 0-56.9 82.8c-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3.1-35.3-7-69.6-20.9-101.9zM512 814.8S156 586.7 156 385.5C156 283.6 240.3 201 344.3 201c73.1 0 136.5 40.8 167.7 100.4C543.2 241.8 606.6 201 679.7 201c104 0 188.3 82.6 188.3 184.5 0 201.2-356 429.3-356 429.3z"
                     ></path>
@@ -289,15 +244,7 @@
             <div class="col col-6">
               <div class="icon-box">
                 <i class="anticon anticon-smile">
-                  <svg
-                    viewBox="64 64 896 896"
-                    class=""
-                    data-icon="smile"
-                    width="1em"
-                    height="1em"
-                    fill="white"
-                    aria-hidden="true"
-                  >
+                  <svg viewBox="64 64 896 896" class="" data-icon="smile" width="1em" height="1em" fill="white" aria-hidden="true">
                     <path
                       d="M288 421a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm352 0a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm263 711c-34.2 34.2-74 61-118.3 79.8C611 874.2 562.3 884 512 884c-50.3 0-99-9.8-144.8-29.2A370.4 370.4 0 0 1 248.9 775c-34.2-34.2-61-74-79.8-118.3C149.8 611 140 562.3 140 512s9.8-99 29.2-144.8A370.4 370.4 0 0 1 249 248.9c34.2-34.2 74-61 118.3-79.8C413 149.8 461.7 140 512 140c50.3 0 99 9.8 144.8 29.2A370.4 370.4 0 0 1 775.1 249c34.2 34.2 61 74 79.8 118.3C874.2 413 884 461.7 884 512s-9.8 99-29.2 144.8A368.89 368.89 0 0 1 775 775zM664 533h-48.1c-4.2 0-7.8 3.2-8.1 7.4C604 589.9 562.5 629 512 629s-92.1-39.1-95.8-88.6c-.3-4.2-3.9-7.4-8.1-7.4H360a8 8 0 0 0-8 8.4c4.4 84.3 74.5 151.6 160 151.6s155.6-67.3 160-151.6a8 8 0 0 0-8-8.4z"
                     ></path>
@@ -312,15 +259,7 @@
             <div class="col col-6">
               <div class="icon-box">
                 <i class="anticon anticon-star">
-                  <svg
-                    viewBox="64 64 896 896"
-                    class=""
-                    data-icon="star"
-                    width="1em"
-                    height="1em"
-                    fill="white"
-                    aria-hidden="true"
-                  >
+                  <svg viewBox="64 64 896 896" class="" data-icon="star" width="1em" height="1em" fill="white" aria-hidden="true">
                     <path
                       d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z"
                     ></path>
@@ -338,20 +277,17 @@
     </section>
     <!-- END CHOOSE US -->
 
-    <!-- Start Video Review -->
+
+    <!-- Review -->
+    <section id="review">
+      <!-- Start Video Review -->
     <section id="video-review">
       <div class="container mt-5 mb-5">
         <h2 class="title">Video Review</h2>
 
         <!-- Start Video Review Content -->
 
-        <iframe
-          class="w-75 d-block m-auto"
-          style="min-height: 500px"
-          src="https://www.youtube.com/embed/T4ySAlBt2Ug"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <iframe class="w-75 d-block m-auto" style="min-height: 500px" src="https://www.youtube.com/embed/T4ySAlBt2Ug" frameborder="0" allowfullscreen></iframe>
         <!-- End Video Review Content -->
       </div>
     </section>
@@ -359,19 +295,12 @@
 
     <div class="container-fluid p-0">
       <!-- Carousel -->
-      <div
-        id="demo"
-        class="carousel slide cac-khach-hang"
-        data-bs-ride="carousel"
-      >
+      <div id="demo" class="carousel slide cac-khach-hang" data-bs-ride="carousel">
         <!-- The slideshow/carousel -->
         <div class="carousel-inner khach-hang">
           <div class="carousel-item active">
             <div class="container noi-dung">
-              <p>
-                "Đánh giá cao shop lắm nghen, Shop tư vấn rất nhiệt tình luôn.
-                Yêu Shop ^_^."
-              </p>
+              <p>"Đánh giá cao shop lắm nghen, Shop tư vấn rất nhiệt tình luôn. Yêu Shop ^_^."</p>
               <img class="mu-rt-img" src="images/customer1.jpg" alt="img" />
               <h5 class="mu-rt-name">Cẩm Uyên</h5>
               <span class="mu-rt-title"> Khách hàng mới </span>
@@ -379,10 +308,7 @@
           </div>
           <div class="carousel-item">
             <div class="container noi-dung">
-              <p>
-                "Oh, shop làm tôi đi từ bất ngờ này tới bất ngờ khác, rất nhiều
-                hoạt động đặc biệt."
-              </p>
+              <p>"Oh, shop làm tôi đi từ bất ngờ này tới bất ngờ khác, rất nhiều hoạt động đặc biệt."</p>
               <img class="mu-rt-img" src="images/customer2.jpg" alt="img" />
               <h5 class="mu-rt-name">Anh Nghĩa</h5>
               <span class="mu-rt-title"> Khách hàng thường xuyên </span>
@@ -390,10 +316,7 @@
           </div>
           <div class="carousel-item">
             <div class="container noi-dung">
-              <p>
-                "Có thể là nhờ những bộ cánh mà shop tư vấn khiến tôi cưa đổ
-                crushh :v."
-              </p>
+              <p>"Có thể là nhờ những bộ cánh mà shop tư vấn khiến tôi cưa đổ crushh :v."</p>
               <img class="mu-rt-img" src="images/customer3.jpg" alt="img" />
               <h5 class="mu-rt-name">Văn Tuấn</h5>
               <span class="mu-rt-title"> Khách hàng tiềm năng </span>
@@ -402,44 +325,24 @@
         </div>
 
         <!-- Left and right controls/icons -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
         </button>
 
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#demo"
-            data-bs-slide-to="0"
-            class="active"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#demo"
-            data-bs-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#demo"
-            data-bs-slide-to="2"
-          ></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
       </div>
     </div>
+    </section>
+
+
 
     <!-- FAQ -->
     <section id="mu-faq">
@@ -458,122 +361,55 @@
                     <img src="images/faq-img.png" alt="" class="w-100" />
                   </div>
                   <!-- singel nd -->
-                  <div
-                    class="
-                      col col-xl-6 col-12
-                      d-inline-block
-                      p-4 p-lg-0
-                      ps-0 ps-xl-5
-                      pe-0
-                    "
-                  >
-                    <div
-                      class="accordion w-100 float-end"
-                      id="accordionExample"
-                    >
+                  <div class="col col-xl-6 col-12 d-inline-block p-4 p-lg-0 ps-0 ps-xl-5 pe-0">
+                    <div class="accordion w-100 float-end" id="accordionExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                          <button
-                            class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
-                          >
-                            FShop hoạt động như thế nào ?
-                          </button>
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">FShop hoạt động như thế nào ?</button>
                         </h2>
-                        <div
-                          id="collapseOne"
-                          class="accordion-collapse collapse show"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExample"
-                        >
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            <strong
-                              >This is the first item's accordion body.</strong
-                            >
-                            It is shown by default, until the collapse plugin
-                            adds the appropriate classes that we use to style
-                            each element. These classes control the overall
-                            appearance, as well as the showing and hiding via
-                            CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's
-                            also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the
-                            transition does limit overflow.
+                            <strong>FShop hoạt động chủ yếu là cung cấp phụ kiện cho khách hàng.</strong>
+                            Với ý tưởng độc đáo shop luôn ra mắt thêm nhiều sản phẩm tuyệt vời cho người dùng.
                           </div>
                         </div>
                       </div>
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                          <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            Accordion Item #2
-                          </button>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Tôi không muốn thanh toán bằng phương thức chuyển khoản cho shop có được không ?</button>
                         </h2>
-                        <div
-                          id="collapseTwo"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#accordionExample"
-                        >
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            <strong
-                              >This is the second item's accordion body.</strong
-                            >
-                            It is hidden by default, until the collapse plugin
-                            adds the appropriate classes that we use to style
-                            each element. These classes control the overall
-                            appearance, as well as the showing and hiding via
-                            CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's
-                            also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the
-                            transition does limit overflow.
+                            <strong>Dĩ nhiên là được rồi tại sao lại không chứ.</strong>
+                            Khách hàng có thể thanh toán với bên vận chuyển sau khi nhận được hàng. Shop luôn sẵn sàng hỗ trợ cho mọi nhu cầu của khách hàng kể cả là những vẫn đề tế nhị nhất.
                           </div>
                         </div>
                       </div>
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                          <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree"
-                            aria-expanded="false"
-                            aria-controls="collapseThree"
-                          >
-                            Accordion Item #3
-                          </button>
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Sử dụng ý tưởng áo và phụ kiện của shop có bị phạt không ?</button>
                         </h2>
-                        <div
-                          id="collapseThree"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingThree"
-                          data-bs-parent="#accordionExample"
-                        >
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            <strong
-                              >This is the third item's accordion body.</strong
-                            >
-                            It is hidden by default, until the collapse plugin
-                            adds the appropriate classes that we use to style
-                            each element. These classes control the overall
-                            appearance, as well as the showing and hiding via
-                            CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's
-                            also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the
-                            transition does limit overflow.
+                            <strong>:C Tất nhiên là bạn sẽ bị phạt.</strong>
+                            Mọi ý tưởng của shop sau khi lên thiết kế và có mẫu thử thì đều sẽ tới khâu đăng ký bản quyền. Vậy nên đừng sử dụng khi không có ý kiến của shop nhé.
                           </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Shop có áo Free size không ?</button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"><strong>:v Có hết khách nhé.</strong>(trừ một số loại -_-) Đối với các bạn dưới 75kg thì tất cả các mẫu shop có đều phù hợp. Hiện shop chưa có Big size cho người trên 75kg.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Phí ship như thế nào ạ ?</button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body"><strong>Free ship với đơn trên 700K nhé.</strong> Đặc biệt với những bạn ở khu vực miền Trung sẽ được giảm 20% phí ship luôn.</div>
                         </div>
                       </div>
                     </div>
@@ -595,51 +431,24 @@
           <div class="col-md-12">
             <div class="mu-contact-area">
               <div class="mu-heading-area">
-                <h2 class="mu-heading-title">Gửi Lời Nhắn Cho Chúng Tôi</h2>
+                <h2 class="mu-heading-title">Gửi lời nhắn cho chúng tôi</h2>
                 <span class="mu-header-dot"></span>
               </div>
 
               <!-- Start Contact Content -->
               <div class="mu-contact-content">
                 <div id="form-messages"></div>
-                <form
-                  id="ajax-contact"
-                  method="post"
-                  action="mailer.php"
-                  class="mu-contact-form"
-                >
+                <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
                   <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Name"
-                      id="name"
-                      name="name"
-                      required
-                    />
+                    <input type="text" class="form-control" placeholder="Name" id="name" name="name" required />
                   </div>
                   <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Enter Email"
-                      id="email"
-                      name="email"
-                      required
-                    />
+                    <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required />
                   </div>
                   <div class="form-group">
-                    <textarea
-                      class="form-control"
-                      placeholder="Message"
-                      id="message"
-                      name="message"
-                      required
-                    ></textarea>
+                    <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
                   </div>
-                  <button type="submit" class="mu-send-msg-btn">
-                    <span>SUBMIT</span>
-                  </button>
+                  <button type="submit" class="send"><span>Gửi</span></button>
                 </form>
               </div>
               <!-- End Contact Content -->
@@ -651,14 +460,7 @@
     <!-- END Contact -->
     <!-- Start Google Map -->
     <section id="mu-google-map">
-      <iframe
-        src="https://maps.google.com/maps?width=1920&amp;height=400&amp;hl=en&amp;q=dai hoc vinh&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        width="100%"
-        height="400"
-        frameborder="0"
-        style="border: 0"
-        allowfullscreen
-      ></iframe>
+      <iframe src="https://maps.google.com/maps?width=1920&amp;height=400&amp;hl=en&amp;q=dai hoc vinh&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0" style="border: 0" allowfullscreen></iframe>
     </section>
     <!-- End Google Map -->
 
@@ -668,22 +470,25 @@
         <div class="mu-footer-area">
           <div class="mu-social-media">
             <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
           </div>
+          <p class="mu-copyright">&copy; Copyright <a>Nhóm 22</a>. All right reserved.</p>
         </div>
       </div>
     </footer>
-
     <!-- End footer -->
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-				
+
     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
