@@ -196,3 +196,46 @@ nav {
 #mu-google-map iframe {
   pointer-events: none;
 }
+
+
+
+.list-thumb-children div{
+  padding: 0 15px;
+}
+
+.navbar-nav > .nav-item{
+  position: relative;
+}
+
+.sub-menu{
+  width: 200px;
+  position: absolute;
+  background-color: #ff842f;
+  display: none;
+}
+
+.sub-menu > ul{
+  list-style: none;
+  padding: 0;
+}
+.sub-menu > ul li{
+  padding: 5px 15px;
+}
+
+.sub-menu > ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.sub-menu > ul li:hover{
+  background-color: #fff;
+
+}
+
+.sub-menu > ul li:hover a{
+  color: black;
+}
+
+.navbar-nav > .nav-item:hover .sub-menu{
+  display: block;
+}
