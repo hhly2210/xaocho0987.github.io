@@ -196,6 +196,19 @@ nav .navbar-nav .nav-item .nav-link.active {
   position: relative;
 }
 
+/* Store Men */
+.men-main {
+  padding: 100px 0;
+}
+
+.men-main .row {
+  list-style: none;
+}
+
+.store-price h6 {
+  margin: 0 0 5px;
+}
+
 /* GOOGLE MAP */
 #mu-google-map {
   display: inline;
