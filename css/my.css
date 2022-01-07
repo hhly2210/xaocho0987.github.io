@@ -19,6 +19,7 @@ Author URI:
 #FOOTER
 #RESPONSIVE STYLE
 */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 h1,
 h2,
 h3,
@@ -199,14 +200,109 @@ nav .navbar-nav .nav-item .nav-link.active {
 /* Store Men */
 .men-main {
   padding: 100px 0;
+  /*button:before (attr data-hover)*/
+  /*button div (button text before hover)*/
 }
 
 .men-main .row {
   list-style: none;
 }
 
+.men-main .mainquick-view *,
+.men-main .mainquick-view *:before,
+.men-main .mainquick-view *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: 300 1em/1.5 "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+  color: #111;
+}
+
+.men-main .quick-view:hover {
+  cursor: pointer;
+}
+
+.men-main .quick-view {
+  background: transparent;
+  outline: none;
+  position: relative;
+  border: 2px solid #111;
+  padding: 15px 50px;
+  overflow: hidden;
+}
+
+.men-main .quick-view:hover:before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.men-main .quick-view:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  opacity: 0;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.men-main .quick-view:hover div {
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+.men-main .quick-view div {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .store-price h6 {
   margin: 0 0 5px;
+}
+
+.content-sp p {
+  margin: 0 0 0px;
+}
+
+.content-number {
+  width: 50%;
+  float: left;
+  margin: 0.5em 0;
+}
+
+.content-number .title-quantity {
+  margin: 0;
+  margin-bottom: 5px;
+  display: block;
+  position: relative;
+  font-size: 16px;
+  background: 0 0;
+}
+
+.content-number .book-number {
+  width: 80px;
+  float: left;
+  height: 40px;
+}
+
+.product-action-wrapper {
+  float: left;
+  width: 100%;
 }
 
 /* GOOGLE MAP */

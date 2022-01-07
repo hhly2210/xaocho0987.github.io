@@ -185,10 +185,65 @@ nav {
 }
 
 /* Store Men */
-.men-main{
+.men-main {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
   padding: 100px 0;
   .row {
     list-style: none;
+  }
+  .mainquick-view *,
+  .mainquick-view *:before,
+  .mainquick-view *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 300 1em/1.5 "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    color: #111;
+  }
+
+  .quick-view:hover {
+    cursor: pointer;
+  }
+  .quick-view {
+    background: transparent;
+    outline: none;
+    position: relative;
+    border: 2px solid #111;
+    padding: 15px 50px;
+    overflow: hidden;
+  }
+
+  /*button:before (attr data-hover)*/
+  .quick-view:hover:before {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .quick-view:before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 1.1em;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 0.8em;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all 0.3s ease-in-out;
+  }
+  /*button div (button text before hover)*/
+  .quick-view:hover div {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
+  .quick-view div {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 0.8em;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -196,6 +251,36 @@ nav {
   h6 {
     margin: 0 0 5px;
   }
+}
+
+.content-sp {
+  p {
+    margin: 0 0 0px;
+  }
+}
+
+.content-number {
+  width: 50%;
+  float: left;
+  margin: 0.5em 0;
+  .title-quantity {
+    margin: 0;
+    margin-bottom: 5px;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    background: 0 0;
+  }
+  .book-number {
+    width: 80px;
+    float: left;
+    height: 40px;
+  }
+}
+
+.product-action-wrapper {
+  float: left;
+  width: 100%;
 }
 
 /* GOOGLE MAP */
